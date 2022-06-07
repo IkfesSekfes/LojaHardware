@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 
+import com.lojahardware.R;
+
 public class MainActivity extends AppCompatActivity {
     //alterando de publico pra privado.
     @Override
