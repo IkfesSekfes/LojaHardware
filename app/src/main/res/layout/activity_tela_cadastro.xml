@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#332F2F"
+    tools:context=".TelaCadastro">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pcicon" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Hellu Games"
+        android:textColor="#00BCD4"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="638dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cadastro"
+                android:textAlignment="center"
+                android:textColor="#FFFDFD"
+                android:textSize="26dp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="Primeiro Nome"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/entrada_primeiroNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+                />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="Sobrenome"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/entrada_sobrenome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+
+                />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="Sexo"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner_sexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="Idade"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/entrada_idade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="E-mail"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/entrada_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Exemplo: carlosSilva@gmail.com"
+                android:inputType="textEmailSubject"
+                android:textColorHint="#bbb"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="Senha"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/entrada_senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ex:12346"
+                android:inputType="numberDecimal"
+                android:textColorHint="#bbb"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn_cadastroCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="80dp"
+                android:backgroundTint="@color/teal_200"
+                android:onClick="confirmarCardastro"
+                android:text="Cadastrar"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

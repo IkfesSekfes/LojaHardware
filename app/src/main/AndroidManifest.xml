@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LojaHardware">
         <activity
+            android:name=".TelaCadastro"
+            android:exported="false" />
+        <activity
             android:name=".Menu"
             android:exported="false" />
         <activity
